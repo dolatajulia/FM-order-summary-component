@@ -8,4 +8,4 @@ https://dolatajulia.github.io/FM-order-summary-component/
 
 ## Project screenshot
 
-![image](?)
+![image](project-screenshot.jpg)
