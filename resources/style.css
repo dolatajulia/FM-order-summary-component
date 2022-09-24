@@ -1,0 +1,143 @@
+:root {
+    --fc-heading: hsl(223, 47%, 23%);
+    --fc-regular: hsl(224, 23%, 55%);
+    
+    --accent-color: hsl(245, 75%, 52%);
+    --bg-color: hsl(225, 100%, 94%);
+    --card-bg-color: hsl(0, 0%, 100%);
+    --element-bg-color: hsl(225, 100%, 98%);
+    --hover-state-color: hsla(245, 75%, 52%, 0.753);
+
+    --fs-small: 0.85rem;
+    --fs-regular: 1rem;
+    --fs-heading: 1.8rem;
+
+    --ff: 'Red Hat Display', sans-serif;
+
+    --fw-regular: 500;
+    --fw-bold: 700;
+    --fw-super-bold: 900;
+
+    --card-padding: 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: var(--ff);
+    background-image: url("pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.card {
+    background-color: var(--card-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 55px;
+    text-align: center;
+}
+
+.element {
+    display: flex;
+    background-color: var(--element-bg-color);
+    padding: 1.3rem;
+    margin: 1rem 0;
+    width: 100%;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.element-left {
+    display: flex;
+}
+
+.plan-and-price {
+    padding-left: 1rem;
+}
+
+h1 {
+    color: var(--fc-heading);
+    font-size: var(--fs-heading);
+    font-weight: var(--fw-super-bold);
+    padding: var(--card-padding);
+}
+
+h2 {
+    color: var(--fc-heading);
+    font-size: var(--fs-regular);
+    font-weight: var(--fw-super-bold);
+}
+
+p {
+    color: var(--fc-regular);
+    font-size: var(--fs-regular);
+    font-weight: var(--fw-regular);
+    line-height: 1.5rem;
+}
+
+a {
+    color: var(--accent-color);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-small);
+}
+
+a:active {
+    color: var(--hover-state-color);
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    font-weight: var(--fw-bold);
+}
+
+button:hover, a:hover {
+    cursor: pointer;
+}
+
+.payment-btn {
+    border-radius: 10px;
+    background-color: var(--accent-color);
+    color: var(--card-bg-color);
+}
+
+.payment-btn:active {
+    background-color: var(--hover-state-color);
+}
+
+.cancel-btn {
+    background-color: transparent;
+    color: var(--fc-regular);
+}
+
+.cancel-btn:active {
+    color: var(--fc-heading);
+}
+
